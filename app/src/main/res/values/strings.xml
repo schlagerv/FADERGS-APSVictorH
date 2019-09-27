@@ -1,4 +1,19 @@
 <resources>
-    <string name="app_name">VictorHAps</string>
+    <string name="app_name">VictorH Aps Fadergs</string>
     <string name="action_settings">Settings</string>
-</resources>
+
+    <string name="txtSalvar">SALVAR</string>
+    <string name="txtTimes">Times</string>
+    <string name="txtJogadores">Jogadores</string>
+
+    <string name="hintCamisa">Número da Camisa:</string>
+    <string name="hintNomeJogador">Nome do Jogador:</string>
+    <string name="hintPontos">Pontos:</string>
+    <string name="hintNomeTime">Nome do Time:</string>
+
+
+
+    <string name="txtAlerta">Atenção!</string>
+    <string name="txtAlertaJogador">Você deve informar o nome do Jogador e o Número da Camisa.</string>
+
+    </resources>
