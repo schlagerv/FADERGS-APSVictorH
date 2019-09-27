@@ -29,7 +29,7 @@ public class Jogador {
         this.nome = nome;
     }
 
-    public double getCamisa() {
+    public int getCamisa() {
         return camisa;
     }
 

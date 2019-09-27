@@ -45,7 +45,6 @@ public class AdapterJogador extends BaseAdapter {
         if (view == null) {
             view = inflater.inflate(R.layout.layout_lista_jogador, null);
             item = new ItemSuporte();
-            item.tvIdJogador = (TextView) view.findViewById(R.id.tvListaIdJogador);
             item.tvNomeJogador = (TextView) view.findViewById(R.id.tvListaNomeJogador);
             item.tvListaNumeroCamisa = (TextView) view.findViewById(R.id.tvListaNumeroCamisa);
             item.layoutJogador = (LinearLayout) view.findViewById(R.id.layoutJogador);
@@ -55,12 +54,10 @@ public class AdapterJogador extends BaseAdapter {
         }
 
         Jogador jogador = listaJogadores.get(i);
-        item.tvIdJogador.setText(String.valueOf(jogador.getId()));
         item.tvNomeJogador.setText(jogador.getNome());
         item.tvListaNumeroCamisa.setText(String.valueOf(jogador.getCamisa()));
 
-        if (jogador.getNome().equals("Lista Vazia!")) {
-            item.tvIdJogador.setText(" ");
+        if (jogador.getNome().equals(context.getString(R.string.txtListaVazia))) {
             item.tvListaNumeroCamisa.setText(" ");
         }
 
@@ -74,7 +71,7 @@ public class AdapterJogador extends BaseAdapter {
     }
 
     private class ItemSuporte {
-        TextView tvIdJogador, tvNomeJogador, tvListaNumeroCamisa;
+        TextView tvNomeJogador, tvListaNumeroCamisa;
         LinearLayout layoutJogador;
     }
 }

@@ -62,11 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void excluir(final Time time) {
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
-        alerta.setTitle("Excluir Time");
-        alerta.setMessage("Confirma a exclusão do time "
-                + time.getNome() + "?");
-        alerta.setNeutralButton("Cancelar", null);
-        alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+        alerta.setTitle(getString(R.string.txtExcluir) + " " + time.getNome());
+        alerta.setMessage(getString(R.string.txtConfirmaExclusao));
+        alerta.setNeutralButton((getString(R.string.btnCancelar)), null);
+        alerta.setPositiveButton((getString(R.string.btnConfirmar)), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 TimeDAO.excluirTime(MainActivity.this, time.getId());
@@ -113,15 +112,11 @@ public class MainActivity extends AppCompatActivity {
             lvTimes.setEnabled(false);
             Time fake = new Time();
             fake.setPontos(0);
-            fake.setNome("Lista Vazia!");
+            fake.setNome(getString(R.string.txtListaVazia));
             lista.add(fake);
         } else {
             lvTimes.setEnabled(true);
         }
-
-//        ArrayAdapter<Produto> adapter = new ArrayAdapter(
-//                this, android.R.layout.simple_list_item_1,
-//                lista);
 
         AdapterTime adapter = new AdapterTime(this, lista);
 

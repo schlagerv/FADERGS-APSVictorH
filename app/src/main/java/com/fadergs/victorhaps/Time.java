@@ -21,7 +21,7 @@ public class Time {
         this.nome = nome;
     }
 
-    public double getPontos() {
+    public int getPontos() {
         return pontos;
     }
 

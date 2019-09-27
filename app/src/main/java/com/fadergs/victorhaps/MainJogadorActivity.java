@@ -15,7 +15,6 @@ import java.util.List;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class MainJogadorActivity extends AppCompatActivity {
 
@@ -38,16 +37,6 @@ public class MainJogadorActivity extends AppCompatActivity {
             }
         });
 
-        lvJogadores.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-//                Intent intent = new Intent(MainJogadorActivity.this, FormularioJogadorActivity.class);
-//                intent.putExtra("idTime", getIntent().getExtras().getInt("idTime"));
-//                startActivity(intent);
-            }
-        });
-
         lvJogadores.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -59,11 +48,10 @@ public class MainJogadorActivity extends AppCompatActivity {
 
     private void excluir(final Jogador jogador) {
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
-        alerta.setTitle("Excluir Jogador");
-        alerta.setMessage("Confirma a exclusão do jogador "
-                + jogador.getNome() + "?");
-        alerta.setNeutralButton("Cancelar", null);
-        alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+        alerta.setTitle(getString(R.string.txtExcluir) + " " + jogador.getNome());
+        alerta.setMessage(getString(R.string.txtConfirmaExclusao));
+        alerta.setNeutralButton((getString(R.string.btnCancelar)), null);
+        alerta.setPositiveButton((getString(R.string.btnConfirmar)), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 JogadorDAO.excluirJogador(MainJogadorActivity.this, jogador.getId());
@@ -109,7 +97,7 @@ public class MainJogadorActivity extends AppCompatActivity {
             lvJogadores.setEnabled(false);
             Jogador fake = new Jogador();
             fake.setCamisa(0);
-            fake.setNome("Lista Vazia!");
+            fake.setNome(getString(R.string.txtListaVazia));
             listaJogadores.add(fake);
         } else {
             lvJogadores.setEnabled(true);

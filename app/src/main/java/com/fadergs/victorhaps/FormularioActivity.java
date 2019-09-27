@@ -40,8 +40,8 @@ public class FormularioActivity extends AppCompatActivity {
         if (nome.isEmpty()) {
             AlertDialog.Builder alerta = new AlertDialog.Builder(this);
             alerta.setIcon(android.R.drawable.ic_dialog_alert);
-            alerta.setTitle("Atenção!");
-            alerta.setMessage("Você deve informar o nome do Time.");
+            alerta.setTitle(getString(R.string.txtAlerta));
+            alerta.setMessage(getString(R.string.txtAlertaTime));
             alerta.setPositiveButton("OK", null);
             alerta.show();
         } else {
@@ -53,8 +53,8 @@ public class FormularioActivity extends AppCompatActivity {
                 time.setPontos(Integer.valueOf(pontos));
             }
             TimeDAO.inserirTime(this, time);
+            this.finish();
         }
-        this.finish();
     }
 }
 

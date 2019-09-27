@@ -59,7 +59,7 @@ public class AdapterTime extends BaseAdapter {
         item.tvNome.setText(time.getNome());
         item.tvPontos.setText(String.valueOf(time.getPontos()));
 
-        if (time.getNome().equals("Lista Vazia!")) {
+        if (time.getNome().equals(context.getString(R.string.txtListaVazia))) {
             item.tvId.setText(" ");
             item.tvPontos.setText(" ");
         }

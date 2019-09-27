@@ -14,7 +14,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Id: " />
+             />
 
         <TextView
             android:id="@+id/tvListaNomeTime"
@@ -22,14 +22,14 @@
             android:layout_height="wrap_content"
 
             android:layout_weight="3"
-            android:hint="Nome: " />
+             />
 
         <TextView
             android:id="@+id/tvListaPonto"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Pontos: " />
+             />
 
     </LinearLayout>
 

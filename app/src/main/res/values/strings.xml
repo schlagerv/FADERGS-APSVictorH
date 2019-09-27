@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">VictorH Aps Fadergs</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name"></string>
+    <string name="action_settings">Configurações</string>
 
     <string name="txtSalvar">SALVAR</string>
     <string name="txtTimes">Times</string>
     <string name="txtJogadores">Jogadores</string>
+    <string name="labelId">ID</string>
+    <string name="labelNome">Nome</string>
+    <string name="labelNumero">Nº</string>
+    <string name="labelPonto">Pontuação</string>
+
+
 
     <string name="hintCamisa">Número da Camisa:</string>
     <string name="hintNomeJogador">Nome do Jogador:</string>
@@ -12,8 +18,16 @@
     <string name="hintNomeTime">Nome do Time:</string>
 
 
-
     <string name="txtAlerta">Atenção!</string>
     <string name="txtAlertaJogador">Você deve informar o nome do Jogador e o Número da Camisa.</string>
+    <string name="txtAlertaTime">Você deve informar o nome do Time.</string>
 
-    </resources>
+    <string name="txtExcluir">Excluir</string>
+    <string name="txtConfirmaExclusao">Confirma a exclusão ?</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnConfirmar">Sim</string>
+
+    <string name="txtListaVazia">Lista Vazia!</string>
+
+
+</resources>

@@ -38,8 +38,8 @@ public class FormularioJogadorActivity extends AppCompatActivity {
         if (nome.isEmpty()||camisa.isEmpty()) {
             AlertDialog.Builder alerta = new AlertDialog.Builder(this);
             alerta.setIcon(android.R.drawable.ic_dialog_alert);
-            alerta.setTitle("Atenção!");
-            alerta.setMessage("Você deve informar o nome do Jogador e o Número da Camisa.");
+            alerta.setTitle(getString(R.string.txtAlerta));
+            alerta.setMessage(getString(R.string.txtAlertaJogador));
             alerta.setPositiveButton("OK", null);
             alerta.show();
         } else {
@@ -47,10 +47,10 @@ public class FormularioJogadorActivity extends AppCompatActivity {
             jogador.setNome(nome);
             jogador.setCamisa(Integer.valueOf(camisa));
             jogador.setIdTime(getIntent().getExtras().getInt("idTime"));
-
             JogadorDAO.inserirJogador(this, jogador);
+            this.finish();
         }
-        this.finish();
+
     }
 }
 
