@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+
+    <string name="txtSalvar">SAVE</string>
+    <string name="txtTimes">Teams</string>
+    <string name="txtJogadores">Players</string>
+    <string name="labelId">ID</string>
+    <string name="labelNome">Name</string>
+    <string name="labelNumero">Nº</string>
+    <string name="labelPonto">Pts</string>
+
+
+
+    <string name="hintCamisa">Player Number:</string>
+    <string name="hintNomeJogador">Player Name:</string>
+    <string name="hintPontos">Points:</string>
+    <string name="hintNomeTime">Team Name:</string>
+
+
+    <string name="txtAlerta">Warning!</string>
+    <string name="txtAlertaJogador">You must fill the player\'s name and number.</string>
+    <string name="txtAlertaTime">You must inform the team\'s name.</string>
+
+    <string name="txtExcluir">Delete</string>
+    <string name="txtConfirmaExclusao">Confirm deletion ?</string>
+    <string name="btnCancelar">Cancel</string>
+    <string name="btnConfirmar">Yes</string>
+
+    <string name="txtListaVazia">Empty List!</string>
+
+
+</resources>

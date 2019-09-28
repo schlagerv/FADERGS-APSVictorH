@@ -8,19 +8,19 @@
     <string name="labelId">ID</string>
     <string name="labelNome">Nome</string>
     <string name="labelNumero">Nº</string>
-    <string name="labelPonto">Pontuação</string>
+    <string name="labelPonto">Pts</string>
 
 
 
-    <string name="hintCamisa">Número da Camisa:</string>
+    <string name="hintCamisa">Número do Jogador:</string>
     <string name="hintNomeJogador">Nome do Jogador:</string>
     <string name="hintPontos">Pontos:</string>
     <string name="hintNomeTime">Nome do Time:</string>
 
 
     <string name="txtAlerta">Atenção!</string>
-    <string name="txtAlertaJogador">Você deve informar o nome do Jogador e o Número da Camisa.</string>
-    <string name="txtAlertaTime">Você deve informar o nome do Time.</string>
+    <string name="txtAlertaJogador">Você deve informar o nome do jogador e o número da camisa.</string>
+    <string name="txtAlertaTime">Você deve informar o nome do time.</string>
 
     <string name="txtExcluir">Excluir</string>
     <string name="txtConfirmaExclusao">Confirma a exclusão ?</string>
